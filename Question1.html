@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime</title>
+</head>
+
+<body>
+
+    <h2>1. Write a JavaScript function to get an array and to read the first element of an array. Check whether it is prime or not.</h2> 
+    <hr color="Green"> 
+    <h3 id="first"></h3>
+    <h2 id="check"></h2>
+    <input type="button" value="Check" onClick="check_No()"> 
+       
+    <script>  
+
+        function check_No(){
+        let s=[7, 6, 10, 4, 5]; 
+        let f=s[0];   
+         document.getElementById("first").innerHTML = "First element is  " + f; 
+ 
+           var i, flag = true; 
+              for(i = 2; i <= f /2; ++i) 
+              {
+                  if (f % i == 0) { 
+                      flag = false; 
+                      break; 
+                  } 
+                }
+              if (flag == true) 
+              {
+              document.getElementById("check").innerHTML = f + " is prime"
+              }
+              else
+              {
+              document.getElementById("check").innerHTML = f + " is not prime"
+              }
+        } 
+
+    </script> 
+</body>
+</html>

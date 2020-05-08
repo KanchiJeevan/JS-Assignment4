@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Squares</title>
+</head>
+<body>
+    <h2>4. Write a JavaScript program to find the sum of squares of the elements of an array.</h2>
+    <hr color="green">
+
+    <script>
+        function SumOfSq(array) {
+         var sum = 0,i = array.length;
+        while (i--) 
+        sum += Math.pow(array[i], 2);
+        return sum;
+        }
+console.log(SumOfSq([5,8,2,6])); 
+    </script>
+</body>
+</html>
